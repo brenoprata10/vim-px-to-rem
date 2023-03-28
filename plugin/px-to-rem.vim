@@ -43,7 +43,7 @@ function! VimPxRemConvert(convert_to, skip_confirmation, start_line, end_line)
 endfunction
 
 "Available commands
-command! -range -bang Rem call VimPxRemConvert("rem",<bang>0,<line1>,<line2>)
-command! -range -bang Px call VimPxRemConvert("px", <bang>0,<line1>,<line2>)
+command! -range -bang Rem call VimPxRemConvert("rem",<bang>1,<line1>,<line2>)
+command! -range -bang Px call VimPxRemConvert("px", <bang>1,<line1>,<line2>)
 command! -range=% -bang RemAll call VimPxRemConvert("rem",<bang>0,<line1>,<line2>)
 command! -range=% -bang PxAll call VimPxRemConvert("px", <bang>0,<line1>,<line2>)
